@@ -112,4 +112,34 @@ h2 {
   font-size: 25px;
   padding: 1rem 0;
   color: var(--blackColor);
+}
+
+.navbar {
+  position: fixed;
+  flex-direction: column;
+  width: 100%;
+  z-index: 1000;
+}
+.navbar .navBarOne .navBarTwo {
+  justify-content: space-between;
+  padding: 1rem;
+  width: 100%;
+}
+.navbar .navBarOne {
+  background: var(--secondaryColor);
+}
+.navbar .navBarOne .icon:hover {
+  color: var(--primaryColor);
+}
+.navbar .navBarOne .atb {
+  gap: 1rem;
+}
+.navbar .navBarOne .atb span {
+  color: var(--blackColor);
+  font-size: 13px;
+  cursor: pointer;
+}
+.navbar .navBarOne .atb span:hover {
+  color: var(--primaryColor);
+  font-size: 700;
 }/*# sourceMappingURL=main.css.map */

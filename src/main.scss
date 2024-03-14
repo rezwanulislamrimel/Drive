@@ -111,3 +111,35 @@ h2 {
 }
 
 //*  ALl the deafault styling  are done here
+
+//! Navbar section styling
+
+.navbar {
+    position: fixed;
+    flex-direction: column;
+    width: 100%;
+    z-index: 1000;
+    .navBarOne .navBarTwo {
+        justify-content: space-between;
+        padding: 1rem;
+        width: 100%;
+    }
+    .navBarOne {
+        background: var(--secondaryColor);
+        .icon:hover {
+            color: var(--primaryColor);
+        }
+        .atb {
+            gap: 1rem;
+            span {
+                color: var(--blackColor);
+                font-size: 13px;
+                cursor: pointer;
+                &:hover {
+                    color: var(--primaryColor);
+                    font-size: 700;
+                }
+            }
+        }
+    }
+}
