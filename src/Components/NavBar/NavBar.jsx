@@ -8,7 +8,7 @@ import { AiOutlineGlobal } from "react-icons/ai";
 
 function NavBar() {
   return (
-    <div className="navbar flex">
+    <div className="navBar flex">
       <div className="navBarOne flex">
         <div>
           <FaTachometerAlt className="icon"></FaTachometerAlt>
@@ -26,7 +26,7 @@ function NavBar() {
           <span>Sign Out</span>
         </div>
       </div>
-      <div className="navBarTwo">
+      <div className="navBarTwo flex">
         <div className="logoDiv">
           <img src={logo} className="logo" />
         </div>
