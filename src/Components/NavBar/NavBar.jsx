@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaTachometerAlt } from "react-icons/fa";
 import { FcSupport } from "react-icons/fc";
 //  import images
@@ -7,9 +7,16 @@ import { TfiMenuAlt } from "react-icons/tfi";
 import { AiOutlineGlobal } from "react-icons/ai";
 
 function NavBar() {
+  const [active, setActive] = useState("navBarMenu");
+  const showNavBar = () => {
+    setActive("navBarMenu showNavBar");
+  };
+  const removeNavBar = () => {
+    setActive("navBarMenu");
+  };
   return (
-    <div className="navBar flex">
-      <div className="navBarOne flex">
+    <div className="NavigationBar flex">
+      <div className="NavigationBarOne flex">
         <div>
           <FaTachometerAlt className="icon"></FaTachometerAlt>
         </div>
@@ -21,28 +28,40 @@ function NavBar() {
             <AiOutlineGlobal className="icon"></AiOutlineGlobal> Languages
           </li>
         </div>
-        <div className="atb flex">
+        <div className="ats flex">
           <span>Sign In</span>
           <span>Sign Out</span>
         </div>
       </div>
-      <div className="navBarTwo flex">
+      <div className="NavigationBarTwo flex">
         <div className="logoDiv">
           <img src={logo} className="logo" />
         </div>
-        <div className="navBarMenu">
+        <div className={active}>
           <ul className="menu flex">
-            <li className="listItem">Home</li>
-            <li className="listItem">About</li>
-            <li className="listItem">Offer</li>
-            <li className="listItem">Seats</li>
-            <li className="listItem">Destinations</li>
+            <li onClick={removeNavBar} className="listItem">
+              Home
+            </li>
+            <li onClick={removeNavBar} className="listItem">
+              About
+            </li>
+            <li onClick={removeNavBar} className="listItem">
+              Offer
+            </li>
+            <li onClick={removeNavBar} className="listItem">
+              Seats
+            </li>
+            <li onClick={removeNavBar} className="listItem">
+              Destinations
+            </li>
           </ul>
-          <button className="btn flex btnOne">Contact</button>
+          <button onClick={removeNavBar} className="btn flex btnOne">
+            Contact
+          </button>
         </div>
-        {/* <button className="btn flex btnTwo">Contact</button> */}
-        <div className="toggleIcon">
-          <TfiMenuAlt></TfiMenuAlt>
+        <button className="btn flex btnTwo">Contact</button>
+        <div onClick={showNavBar} className="toggleIcon">
+          <TfiMenuAlt className="icon"></TfiMenuAlt>
         </div>
       </div>
     </div>

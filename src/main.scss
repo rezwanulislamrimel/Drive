@@ -114,25 +114,25 @@ h2 {
 
 //! Navigation  section styling starting here
 
-.navBar {
+.NavigationBar {
     position: fixed;
     flex-direction: column;
     width: 100%;
     z-index: 1000;
 
-    .navBarOne,
-    .navBarTwo {
+    .NavigationBarOne,
+    .NavigationBarTwo {
         justify-content: space-between;
         padding: 1rem;
         width: 100%;
     }
-    .navBarOne {
+    .NavigationBarOne {
         background: var(--secondaryColor);
 
         .icon:hover {
             color: var(--primaryColor);
         }
-        .atb {
+        .ats {
             gap: 1rem;
 
             span {
@@ -147,7 +147,7 @@ h2 {
             }
         }
     }
-    .navBarTwo {
+    .NavigationBarTwo {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -168,7 +168,7 @@ h2 {
                 padding: 1.5rem;
                 border-radius: 10px;
                 top: 5rem;
-                right: 50%;
+                right: -50%;
                 width: 80%;
                 transform: translateX(50%);
                 z-index: 2000;
@@ -191,7 +191,26 @@ h2 {
                         }
                     }
                 }
+                .btnOne {
+                    display: block;
+                    justify-content: center;
+                    margin: auto;
+                    margin-top: 1rem;
+                }
             }
+            .btnTwo {
+                display: none;
+            }
+        }
+        .toggleIcon {
+            .icon {
+                font-size: 30px;
+                color: var(--blackColor);
+            }
+        }
+        .showNavBar {
+            right: 50%;
+            transition: 0.3s ease-in-out;
         }
     }
 }
