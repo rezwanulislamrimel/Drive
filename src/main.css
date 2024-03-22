@@ -202,4 +202,29 @@ h2 {
 .NavigationBar .NavigationBarTwo .showNavBar {
   right: 50%;
   transition: 0.3s ease-in-out;
+}
+
+.home {
+  padding-top: 10rem;
+  text-align: center;
+  gap: 2rem;
+  flex-direction: column;
+}
+.home .mainContent {
+  color: var(--blackColor);
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 2.5rem;
+}
+.home .homeImg {
+  width: 100%;
+  margin: 1rem auto 0;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 5rem;
+}
+.home .bus {
+  border-radius: 10rem;
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */
