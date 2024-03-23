@@ -325,3 +325,21 @@ h2 {
         }
     }
 }
+
+//! search section syling end here
+
+//* support section styling is start here
+.support {
+    .sectionContainer {
+        .titlesDiv {
+            text-align: center;
+            small {
+                letter-spacing: 0.8rem;
+                text-transform: uppercase;
+                font-size: 13px;
+                color: var(--blackColor);
+                line-height: 1.5rem;
+            }
+        }
+    }
+}

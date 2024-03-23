@@ -6,6 +6,7 @@ import NavBar from "./Components/NavBar/NavBar";
 import Search from "./Components/Search/Search";
 import Subscribers from "./Components/Subscribers/Subscribers";
 import Support from "./Components/Support/Support";
+
 import Travelers from "./Components/Travelers/Travelers";
 
 const App = () => {
@@ -14,8 +15,8 @@ const App = () => {
       <NavBar></NavBar>
       <Home></Home>
       <Search></Search>
-      {/* <Support> </Support>
-      <Info></Info>
+      <Support></Support>
+      {/* <Info></Info>
       <Travelers></Travelers>
       <Subscribers></Subscribers>
       <Footer></Footer>  */}
