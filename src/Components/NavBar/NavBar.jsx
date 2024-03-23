@@ -7,13 +7,25 @@ import { TfiMenuAlt } from "react-icons/tfi";
 import { AiOutlineGlobal } from "react-icons/ai";
 
 function NavBar() {
+  // remove navbar in the small width screen
   const [active, setActive] = useState("navBarMenu");
   const showNavBar = () => {
     setActive("navBarMenu showNavBar");
   };
+
   const removeNavBar = () => {
     setActive("navBarMenu");
   };
+  //  add a bacground color in the second navbar
+  const [noBG, addBg] = useState("NavigationBarTwo");
+  const addBgColor = () => {
+    if (window.scrollY >= 10) {
+      addBg("NavigationBarTwo navbarWithBg");
+    } else {
+      addBg("NavigationBarTwo");
+    }
+  };
+  window.addEventListener("scroll", addBgColor);
   return (
     <div className="NavigationBar flex">
       <div className="NavigationBarOne flex">
@@ -33,7 +45,7 @@ function NavBar() {
           <span>Sign Out</span>
         </div>
       </div>
-      <div className="NavigationBarTwo flex">
+      <div className={noBG}>
         <div className="logoDiv">
           <img src={logo} className="logo" />
         </div>
