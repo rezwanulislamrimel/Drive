@@ -47,7 +47,7 @@ function Search() {
             </div>
             {/* signle input section Three  */}
 
-            <div className="singlInput flex">
+            {/* <div className="singlInput flex">
               <div className="iconDiv">
                 <RxCalendar className="icon"></RxCalendar>
               </div>
@@ -55,10 +55,10 @@ function Search() {
                 <h4>Cheack In</h4>
                 <input type="text " placeholder="Add Data" />
               </div>
-            </div>
+            </div> */}
             {/* signle input section Four  */}
 
-            <div className="singlInput flex">
+            {/* <div className="singlInput flex">
               <div className="iconDiv">
                 <RxCalendar className="icon"></RxCalendar>
               </div>
@@ -66,7 +66,7 @@ function Search() {
                 <h4>Cheack Out</h4>
                 <input type="text " placeholder="Add Data" />
               </div>
-            </div>
+            </div> */}
             {/* btn section  */}
 
             <button className="btn btnBlock flex">Search Bus</button>
