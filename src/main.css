@@ -3,7 +3,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Spartan", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 :root {
@@ -206,6 +206,7 @@ h2 {
 .NavigationBar .navbarWithBg {
   background: var(--secondaryColor);
   padding: 0.5rem 1rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 
 .home {
@@ -301,4 +302,45 @@ h2 {
 .search .sectionContainer .searchInputs .singlInput .texts input::placeholder {
   font-size: 12px;
   opacity: 0.5;
+}
+
+.support .sectionContainer .titlesDiv {
+  text-align: center;
+}
+.support .sectionContainer .titlesDiv small {
+  letter-spacing: 0.8rem;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: var(--blackColor);
+  line-height: 1.5rem;
+}
+.support .sectionContainer .infoDiv {
+  margin-top: 2rem;
+  gap: 1.5rem;
+}
+.support .sectionContainer .infoDiv .textDiv {
+  gap: 1.5rem;
+}
+.support .sectionContainer .infoDiv .textDiv .singleInfo .number {
+  background: var(--primaryColor);
+  padding: 5px 12px;
+  width: 40px;
+  border-radius: 3rem;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--whiteColor);
+}
+.support .sectionContainer .infoDiv .textDiv .singleInfo .numberColor1 {
+  background: var(--colorOne);
+}
+.support .sectionContainer .infoDiv .textDiv .singleInfo .numberColor2 {
+  background: var(--colorTwo);
+}
+.support .sectionContainer .infoDiv imgDiv {
+  margin: auto;
+}
+.support .sectionContainer .infoDiv imgDiv img {
+  width: 100%;
+  max-width: 420px;
 }/*# sourceMappingURL=main.css.map */

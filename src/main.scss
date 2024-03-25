@@ -1,11 +1,12 @@
-// font
+//! font
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Spartan", sans-serif;
+    // font-family: "Spartan", sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 :root {
     --primaryColor: hsl(225, 50%, 48%);
@@ -216,7 +217,9 @@ h2 {
     .navbarWithBg {
         background: var(--secondaryColor);
         padding: 0.5rem 1rem;
-        box-shadow: rgba(0 0 0 0.1) 0px 10px 15px -3px rgba(0 0 0 0.05) 0px 4px 6px -2px;
+        box-shadow:
+            rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+            rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
     }
 }
 
@@ -339,6 +342,39 @@ h2 {
                 font-size: 13px;
                 color: var(--blackColor);
                 line-height: 1.5rem;
+            }
+        }
+        .infoDiv {
+            margin-top: 2rem;
+            gap: 1.5rem;
+            .textDiv {
+                gap: 1.5rem;
+                .singleInfo {
+                    .number {
+                        background: var(--primaryColor);
+                        padding: 5px 12px;
+                        width: 40px;
+                        border-radius: 3rem;
+                        text-align: center;
+                        font-size: 13px;
+                        font-weight: 700;
+                        color: var(--whiteColor);
+                    }
+                    .numberColor1 {
+                        background: var(--colorOne);
+                    }
+                    .numberColor2 {
+                        background: var(--colorTwo);
+                    }
+                }
+            }
+
+            imgDiv {
+                margin: auto;
+                img {
+                    width: 100%;
+                    max-width: 420px;
+                }
             }
         }
     }
