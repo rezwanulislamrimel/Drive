@@ -391,4 +391,61 @@ h2 {
 }
 .info .infoContainer .cardDiv .colorz2 {
   background: var(--colorTwo);
+}
+
+.travelers .sectionContainer {
+  text-align: center;
+}
+.travelers .sectionContainer .tavelersContainer {
+  margin-top: 1rem;
+  gap: 1.5rem;
+}
+.travelers .sectionContainer .tavelersContainer .sinlgeTraveler {
+  position: relative;
+  height: 320px;
+  width: 85px;
+  max-width: 250px;
+  overflow: hidden;
+  border-radius: 10rem;
+  gap: 1rem;
+  margin: auto;
+}
+.travelers .sectionContainer .tavelersContainer .sinlgeTraveler .destinationImg,
+.travelers .sectionContainer .tavelersContainer .sinlgeTraveler .travelerImg,
+.travelers .sectionContainer .tavelersContainer .sinlgeTraveler .travelerName {
+  position: absolute;
+}
+.travelers .sectionContainer .tavelersContainer .sinlgeTraveler .destinationImg {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  right: 0;
+  left: 0;
+  -o-object-fit: cover0;
+     object-fit: cover0;
+}
+.travelers .sectionContainer .tavelersContainer .sinlgeTraveler .travelerImg {
+  height: 50px;
+  width: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  bottom: 30px;
+  left: 40%;
+  transform: translateX(-50%);
+  border: 5px solid rgba(225, 225, 225, 0.637);
+  transition: var(--transition);
+  animation: animated 2.3 infinite;
+}
+@keyframes animated {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -435,4 +435,65 @@ h2 {
     }
 }
 
-//! Info section styling end here
+// Info section styling end here
+
+//! Travelers section styling start here
+
+.travelers {
+    .sectionContainer {
+        text-align: center;
+
+        .tavelersContainer {
+            margin-top: 1rem;
+            gap: 1.5rem;
+
+            .sinlgeTraveler {
+                position: relative;
+                height: 320px;
+                width: 85px;
+                max-width: 250px;
+                overflow: hidden;
+                border-radius: 10rem;
+                gap: 1rem;
+                margin: auto;
+                .destinationImg,
+                .travelerImg,
+                .travelerName {
+                    position: absolute;
+                }
+                .destinationImg {
+                    height: 100%;
+                    width: 100%;
+                    top: 0;
+                    right: 0;
+                    right: 0;
+                    left: 0;
+                    object-fit: cover0;
+                }
+                .travelerImg {
+                    height: 50px;
+                    width: 50px;
+                    object-fit: cover;
+                    border-radius: 50%;
+                    bottom: 30px;
+                    left: 40%;
+                    transform: translateX(-50%);
+                    border: 5px solid rgba(225, 225, 225, 0.637);
+                    transition: var(--transition);
+                    animation: animated 2.3 infinite;
+                }
+                @keyframes animated {
+                    0% {
+                        transform: translateY(0px);
+                    }
+                    50% {
+                        transform: translateY(8px);
+                    }
+                    100% {
+                        transform: translateY(0px);
+                    }
+                }
+            }
+        }
+    }
+}
