@@ -450,7 +450,7 @@ h2 {
             .sinlgeTraveler {
                 position: relative;
                 height: 320px;
-                width: 85px;
+                width: 85%;
                 max-width: 250px;
                 overflow: hidden;
                 border-radius: 10rem;
@@ -466,9 +466,9 @@ h2 {
                     width: 100%;
                     top: 0;
                     right: 0;
-                    right: 0;
                     left: 0;
-                    object-fit: cover0;
+                    bottom: 0;
+                    object-fit: cover;
                 }
                 .travelerImg {
                     height: 50px;
@@ -479,8 +479,9 @@ h2 {
                     left: 40%;
                     transform: translateX(-50%);
                     border: 5px solid rgba(225, 225, 225, 0.637);
+
                     transition: var(--transition);
-                    animation: animated 2.3 infinite;
+                    animation: animated 2.3s infinite;
                 }
                 @keyframes animated {
                     0% {
@@ -491,6 +492,47 @@ h2 {
                     }
                     100% {
                         transform: translateY(0px);
+                    }
+                }
+                .travelerName {
+                    bottom: -100%;
+                    width: 100%;
+                    height: max-content;
+                    background: var(--whiteColor);
+                    padding: 1.5rem 1rem;
+                    transition: var(--transition);
+                    animation: animatedName 2.3s infinite;
+
+                    span {
+                        display: block;
+                        color: black;
+                        font-weight: 700;
+                    }
+                    p {
+                        color: var(--primaryColor);
+                        font-style: italic;
+                    }
+                }
+
+                @keyframes animatedName {
+                    0% {
+                        border-radius: 0rem;
+                    }
+                    50% {
+                        border-radius: 2rem;
+                    }
+                    100% {
+                        border-radius: 0rem;
+                    }
+                }
+                &:hover {
+                    .travelerName {
+                        bottom: 0;
+                        transition: 1s ease-in-out;
+                    }
+                    .travelerImg {
+                        bottom: 110px;
+                        transition: 1s ease-in-out;
                     }
                 }
             }

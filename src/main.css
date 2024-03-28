@@ -403,7 +403,7 @@ h2 {
 .travelers .sectionContainer .tavelersContainer .sinlgeTraveler {
   position: relative;
   height: 320px;
-  width: 85px;
+  width: 85%;
   max-width: 250px;
   overflow: hidden;
   border-radius: 10rem;
@@ -420,10 +420,10 @@ h2 {
   width: 100%;
   top: 0;
   right: 0;
-  right: 0;
   left: 0;
-  -o-object-fit: cover0;
-     object-fit: cover0;
+  bottom: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .travelers .sectionContainer .tavelersContainer .sinlgeTraveler .travelerImg {
   height: 50px;
@@ -436,7 +436,7 @@ h2 {
   transform: translateX(-50%);
   border: 5px solid rgba(225, 225, 225, 0.637);
   transition: var(--transition);
-  animation: animated 2.3 infinite;
+  animation: animated 2.3s infinite;
 }
 @keyframes animated {
   0% {
@@ -448,4 +448,42 @@ h2 {
   100% {
     transform: translateY(0px);
   }
+}
+.travelers .sectionContainer .tavelersContainer .sinlgeTraveler .travelerName {
+  bottom: -100%;
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  background: var(--whiteColor);
+  padding: 1.5rem 1rem;
+  transition: var(--transition);
+  animation: animatedName 2.3s infinite;
+}
+.travelers .sectionContainer .tavelersContainer .sinlgeTraveler .travelerName span {
+  display: block;
+  color: black;
+  font-weight: 700;
+}
+.travelers .sectionContainer .tavelersContainer .sinlgeTraveler .travelerName p {
+  color: var(--primaryColor);
+  font-style: italic;
+}
+@keyframes animatedName {
+  0% {
+    border-radius: 0rem;
+  }
+  50% {
+    border-radius: 2rem;
+  }
+  100% {
+    border-radius: 0rem;
+  }
+}
+.travelers .sectionContainer .tavelersContainer .sinlgeTraveler:hover .travelerName {
+  bottom: 0;
+  transition: 1s ease-in-out;
+}
+.travelers .sectionContainer .tavelersContainer .sinlgeTraveler:hover .travelerImg {
+  bottom: 110px;
+  transition: 1s ease-in-out;
 }/*# sourceMappingURL=main.css.map */
