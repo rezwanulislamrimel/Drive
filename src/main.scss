@@ -539,3 +539,41 @@ h2 {
         }
     }
 }
+
+//! Travelers section styling end here
+
+//* Subscribe section styling start here
+
+.subscribe {
+    background: var(--secondaryColor);
+    .sectionContainer {
+        text-align: center;
+        .inputDiv {
+            margin-top: 1rem;
+            flex-direction: column;
+            background: var(--whiteColor);
+            border-radius: 1rem;
+
+            input {
+                border: none;
+                outline: none;
+                background: transparent;
+                padding: 1rem 0.5rem;
+                &::placeholder {
+                    font-size: 13px;
+                    opacity: 0.5;
+                }
+            }
+            .btn {
+                width: 100%;
+            }
+        }
+    }
+}
+
+//todo Subscribe section styling end here
+
+
+
+// Footer section star here 
+

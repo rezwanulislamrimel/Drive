@@ -486,4 +486,34 @@ h2 {
 .travelers .sectionContainer .tavelersContainer .sinlgeTraveler:hover .travelerImg {
   bottom: 110px;
   transition: 1s ease-in-out;
+}
+
+.subscribe {
+  background: var(--secondaryColor);
+}
+.subscribe .sectionContainer {
+  text-align: center;
+}
+.subscribe .sectionContainer .inputDiv {
+  margin-top: 1rem;
+  flex-direction: column;
+  background: var(--whiteColor);
+  border-radius: 1rem;
+}
+.subscribe .sectionContainer .inputDiv input {
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 1rem 0.5rem;
+}
+.subscribe .sectionContainer .inputDiv input::-moz-placeholder {
+  font-size: 13px;
+  opacity: 0.5;
+}
+.subscribe .sectionContainer .inputDiv input::placeholder {
+  font-size: 13px;
+  opacity: 0.5;
+}
+.subscribe .sectionContainer .inputDiv .btn {
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */
