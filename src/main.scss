@@ -573,7 +573,109 @@ h2 {
 
 //todo Subscribe section styling end here
 
+//* Footer section start here
 
+.footer {
+    background: var(--secondaryColor);
+    .sectionContainer {
+        gap: 2.5rem;
 
-// Footer section star here 
+        .gridOne {
+            gap: 1rem;
+            justify-content: center;
+            margin: auto;
 
+            .logoDiv {
+                .Logo {
+                    width: 20%;
+                }
+            }
+            .socialIcon {
+                margin-top: 1rem;
+                gap: 1rem;
+                .icon {
+                    height: 50px;
+                    width: 30px;
+                    border-radius: 10rem;
+                    border: 1px solid var(--borderColor);
+                    box-shadow: var(--boxShadow);
+                    padding: 0.4rem;
+                    color: var(--grayText);
+                    &:hover {
+                        background: var(--primaryColor);
+                        transform: translateY(0.7px);
+                        transition: var(--transition);
+                        border: 1px solid var(--primaryColor);
+                        color: var(--whiteColor);
+                    }
+                }
+            }
+        }
+
+        .footerLinks {
+            display: grid;
+        }
+        .linkTitle {
+            color: var(--blackColor);
+            font-weight: 500;
+            display: block;
+            padding-bottom: 1rem;
+        }
+        li a {
+            display: block;
+            color: var(--grayText);
+            transition: var(--transition);
+            padding: 0.3rem 0;
+            &:hover {
+                transform: translateX(7px);
+                color: var(--primaryColor);
+            }
+        }
+    }
+
+    .copyRightDiv {
+        justify-content: center;
+        margin-top: 1.5rem;
+        padding: 1rem;
+        gap: 1rem;
+        border-top: 1px solid var(--grayText);
+        text-align: center;
+    }
+}
+
+//* Footer section end here
+
+// MEDIA SCREEN  STYLE START FROM HERE  ********************************
+
+@media screen and (min-width: 480px) {
+    // Home  page responsive
+    .home {
+        padding-top: 12rem;
+    }
+    // search page responsive
+    .search {
+        .sectionContainer {
+            .sectionInputs {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }
+
+    // traavel section responsive
+    .travelers {
+        .sectionContainer {
+            .tavelersContainer {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }
+
+    // subscribe  page responsive
+    .subscribe {
+        .sectionContainer {
+            max-width: 80%;
+            margin: auto;
+        }
+    }
+}
