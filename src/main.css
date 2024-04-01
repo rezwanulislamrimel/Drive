@@ -595,4 +595,46 @@ h2 {
     max-width: 80%;
     margin: auto;
   }
+  .subscribe .sectionContainer .inputDiv {
+    flex-direction: row;
+    padding: 0 0.5rem;
+    border-radius: 3rem;
+  }
+  .footer .sectionContainer {
+    align-items: flex-start;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer .sectionContainer .footerLinks {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 570px) {
+  .search .sectionContainer .btns {
+    border-radius: 3rem;
+    flex-direction: row;
+  }
+  .support .sectionContainer .infoDiv .textDiv {
+    margin-top: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .info .infoContainer .titleDiv {
+    flex-direction: row;
+  }
+  .info .infoContainer h2 {
+    text-align: left;
+    max-width: 500px;
+  }
+  .info .cardDiv {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .subscribe .sectionContainer .inputDiv {
+    justify-content: space-between;
+  }
+  .subscribe .sectionContainer .inputDiv .btn {
+    max-width: -moz-max-content;
+    max-width: max-content;
+  }
+  .footer .sectionContainer {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }/*# sourceMappingURL=main.css.map */

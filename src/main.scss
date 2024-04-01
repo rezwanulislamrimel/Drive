@@ -676,6 +676,103 @@ h2 {
         .sectionContainer {
             max-width: 80%;
             margin: auto;
+            .inputDiv {
+                flex-direction: row;
+                padding: 0 0.5rem;
+                border-radius: 3rem;
+            }
+        }
+    }
+
+    //  footer page responsive
+
+    .footer {
+        .sectionContainer {
+            align-items: flex-start;
+            grid-template-columns: repeat(2, 1fr);
+            .footerLinks {
+                justify-content: center;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 570px) {
+    // home -------------------------------->
+    // .home {
+    //     .mainContent {
+    //         width: 80%;
+    //     }
+    //     .homeImg {
+    //         .bus {
+    //             position: absolute;
+    //             width: 95%;
+    //             top: -8%;
+    //         }
+    //     }
+    // }
+    // Search  Page ------------------------->
+    .search {
+        .sectionContainer {
+            .btns {
+                border-radius: 3rem;
+                flex-direction: row;
+            }
+            // .sectionInputs {
+            //     display: grid;
+            //     grid-template-columns: repeat(2, 1fr);
+            // }
+        }
+    }
+
+    // Support ------------------------->>>
+    .support {
+        .sectionContainer {
+            .infoDiv {
+                .textDiv {
+                    margin-top: 2rem;
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+        }
+    }
+
+    // info  page ------------------------>
+    .info {
+        .infoContainer {
+            .titleDiv {
+                flex-direction: row;
+            }
+            h2 {
+                text-align: left;
+                max-width: 500px;
+            }
+        }
+        .cardDiv {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    // subscribe  page  ---------------->>>
+    .subscribe {
+        .sectionContainer {
+            .inputDiv {
+                justify-content: space-between;
+                .btn {
+                    max-width: max-content;
+                }
+            }
+        }
+    }
+
+    //  Footer us  page ----------->
+    .footer {
+        .sectionContainer {
+            // padding-top: 2rem;
+            grid-template-columns: repeat(4, 1fr);
+            // .footerLinks {
+            //     justify-content: center;
+            // }
         }
     }
 }
