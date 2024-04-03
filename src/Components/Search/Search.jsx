@@ -2,7 +2,9 @@ import React from "react";
 //! imported icon -----------
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { RiAccountPinCircleLine } from "react-icons/ri";
-import { RxCalendar } from "react-icons/rx";
+import { SlCalender } from "react-icons/sl";
+
+// import { RxCalendar } from "react-icons/rx";
 
 function Search() {
   return (
@@ -22,6 +24,7 @@ function Search() {
               <span>Non-AC</span>
             </div>
           </div>
+
           <div className="searchInputs flex">
             {/* signle input section one  */}
 
@@ -30,8 +33,8 @@ function Search() {
                 <HiOutlineLocationMarker className="icon"></HiOutlineLocationMarker>
               </div>
               <div className="texts">
-                <h4>Location</h4>
-                <input type="text " placeholder="where you want to go" />
+                <h4>From</h4>
+                <input type="text " placeholder="Enter City" />
               </div>
             </div>
             {/* signle input section Two */}
@@ -41,32 +44,33 @@ function Search() {
                 <RiAccountPinCircleLine className="icon"></RiAccountPinCircleLine>
               </div>
               <div className="texts">
-                <h4>Travelers</h4>
-                <input type="text " placeholder="Add Geusts" />
+                <h4>To</h4>
+                <input type="text " placeholder="Enter City" />
               </div>
             </div>
-            {/* signle input section Three  */}
+            {/* signle input section Three */}
 
-            {/* <div className="singlInput flex">
+            <div className="singlInput flex">
               <div className="iconDiv">
-                <RxCalendar className="icon"></RxCalendar>
+                <SlCalender className="icon"></SlCalender>
               </div>
               <div className="texts">
-                <h4>Cheack In</h4>
-                <input type="text " placeholder="Add Data" />
+                <h4>Date of Journey</h4>
+                <input type="text " placeholder="Pick a date" />
               </div>
-            </div> */}
-            {/* signle input section Four  */}
+            </div>
+            {/* signle input section Four */}
 
-            {/* <div className="singlInput flex">
+            <div className="singlInput flex">
               <div className="iconDiv">
-                <RxCalendar className="icon"></RxCalendar>
+                <SlCalender className="icon"></SlCalender>
               </div>
               <div className="texts">
-                <h4>Cheack Out</h4>
-                <input type="text " placeholder="Add Data" />
+                <h4>Date of Return </h4>
+                <input type="text " placeholder="Pick a date" />
               </div>
-            </div> */}
+            </div>
+
             {/* btn section  */}
 
             <button className="btn btnBlock flex">Search Bus</button>

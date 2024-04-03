@@ -4,6 +4,7 @@ import React from "react";
 import { RxCalendar } from "react-icons/rx";
 import { BsShieldCheck } from "react-icons/bs";
 import { BsBookmarkCheck } from "react-icons/bs";
+import { FiUsers } from "react-icons/fi";
 
 function Info() {
   return (
@@ -41,6 +42,15 @@ function Info() {
             </div>
 
             <span className="cardTitile">Save More</span>
+            <p>you can also call us on your phone to book ticket!</p>
+          </div>
+          {/* grid four  */}
+          <div className="singleCard grid">
+            <div className="iconDiv flex colorz2">
+              <FiUsers className="icon"></FiUsers>
+            </div>
+
+            <span className="cardTitile">About Us</span>
             <p>you can also call us on your phone to book ticket!</p>
           </div>
         </div>

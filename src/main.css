@@ -637,4 +637,71 @@ h2 {
   .footer .sectionContainer {
     grid-template-columns: repeat(4, 1fr);
   }
+}
+@media screen and (min-width: 680px) {
+  .search .sectionContainer .btns {
+    border-radius: 3rem;
+    flex-direction: row;
+  }
+  .search .sectionContainer .sectionInputs {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .footer .sectionContainer {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (min-width: 768px) {
+  .NavigationBar {
+    align-items: center;
+  }
+  .NavigationBar .NavigationBarOne .none {
+    display: flex;
+    gap: 1.5rem;
+  }
+  .NavigationBar .NavigationBarOne .none li {
+    font-size: 13px;
+    gap: 0.5rem;
+    color: var(--textColor);
+  }
+  .NavigationBar .NavigationBarOne .none li:hover {
+    color: var(--primaryColor);
+    text-decoration: underline;
+  }
+  .NavigationBar .NavigationBarTwo {
+    justify-content: space-between;
+    align-items: center;
+  }
+  .NavigationBar .NavigationBarTwo .logoDiv .logo {
+    max-width: 20%;
+  }
+  .NavigationBar .NavigationBarTwo .menu {
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+  .NavigationBar .NavigationBarTwo .menu .listItem {
+    padding: 0.5rem;
+    font-size: 14px;
+    cursor: pointer;
+    color: var(--textColor);
+    font-weight: 700;
+  }
+  .NavigationBar .NavigationBarTwo .menu .listItem:hover {
+    color: var(--primaryColor);
+    font-weight: 700;
+  }
+  .NavigationBar .NavigationBarTwo .btnOne,
+  .NavigationBar .NavigationBarTwo .toggleIcon {
+    display: none;
+  }
+  .search .sectionContainer .btns {
+    width: 70%;
+    border-radius: 3rem;
+    flex-direction: row;
+  }
+  .search .sectionContainer .searchInputs {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .search .sectionContainer .searchInputs .singlInput .texts .input {
+    width: 100%;
+  }
 }/*# sourceMappingURL=main.css.map */
