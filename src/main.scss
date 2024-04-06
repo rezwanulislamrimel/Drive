@@ -276,6 +276,7 @@ h2 {
                 border-radius: 3rem;
                 width: 80%;
                 align-items: center;
+                cursor: pointer;
 
                 &:hover {
                     background: var(--primaryColor);
@@ -336,6 +337,7 @@ h2 {
     .sectionContainer {
         .titlesDiv {
             text-align: center;
+
             small {
                 letter-spacing: 0.8rem;
                 text-transform: uppercase;
@@ -901,4 +903,217 @@ h2 {
             }
         }
     }
+
+    // Support section ------------------------->>>
+    .support {
+        .sectionContainer {
+            .infoDiv {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2rem;
+                margin-top: 5rem;
+                .textDiv {
+                    margin-top: 0rem;
+                    grid-template-columns: repeat(1, 1fr);
+                }
+            }
+        }
+    }
+
+    // info  page ------------------------>
+    .info {
+        .infoContainer {
+            padding: 0 6rem;
+            .titleDiv {
+                width: 90%;
+                margin: auto;
+                text-align: center;
+                flex-direction: row;
+            }
+        }
+        .cardDiv {
+            grid-template-columns: repeat(3, 1fr);
+            .singleBtn {
+                max-width: 260px;
+                padding: 3rem;
+            }
+        }
+    }
+
+    // travelers section ------------------>>>
+    //! when we add third travel section then we need to uncommnet this responsive travelrs
+    // .travelers {
+    //     .sectionContainer {
+    //         .tavelersContainer {
+    //             grid-template-columns: repeat(3, 1fr);
+    //         }
+    //     }
+    // }
+}
+
+@media screen and (min-width: 960px) {
+    // Home section ----------------------- >>>
+    // .home {
+    //     padding-top: 13rem;
+    //     .mainContent {
+    //         width: 70%;
+    //         padding-bottom: 1.5rem;
+    //         font-size: 22px;
+    //         line-height: 4rem;
+    //     }
+    //     .homeImg {
+    //         .bus {
+    //             position: absolute;
+    //             width: 95%;
+    //             top: -8%;
+    //         }
+    //     }
+    // }
+
+    // search section --------------------->>>
+    .search {
+        .sectionContainer {
+            .searchInputs {
+                grid-template-columns: repeat(5, 1fr);
+            }
+        }
+    }
+    // travelers section --------------- >>
+
+    .travelers {
+        .sectionContainer {
+            .tavelersContainer {
+                grid-template-columns: repeat(2, 1fr);
+                margin: 3rem 0;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    // default styling -------------------->>>
+    p {
+        font-size: 15px;
+
+        line-height: 25px;
+    }
+    h4 {
+        padding: 1rem 0;
+        font-size: 20px;
+    }
+    h2 {
+        font-size: 27px;
+    }
+    .section {
+        padding: 6rem 0 4rem;
+    }
+
+    .container {
+        width: 75%;
+        margin: auto;
+    }
+
+    // Navbar section --------------------->>>
+    .NavigationBarOne,
+    .NavigationBarTwo {
+        padding: 1.5rem 5rem;
+    }
+    .navbarWithBg {
+        padding: 0 5rem;
+    }
+
+    // Home  section ----------------------->>>
+    .home {
+        .mainContent {
+            width: 60%;
+            font-size: 25px;
+            line-height: 4rem;
+        }
+        .homeImg {
+            .bus {
+                width: 100%;
+                top: -10;
+            }
+        }
+    }
+
+    // search  result section ---------------->>>
+
+    // if we need to make size 50% then uncomment this one
+    .search {
+        .sectionContainer {
+            .btns {
+                width: 50%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1106px) {
+    // Subscribe  section --------------------------->
+    .subscribe {
+        .sectionContainer {
+            max-width: 60%;
+        }
+    }
+}
+@media screen and (min-width: 1332px) {
+    .NavigationBar {
+        .NavigationBarTwo {
+            .menu {
+                gap: 1rem;
+                .listItem {
+                    padding: 0 1.5rem;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    // support   section ------------------------>>
+
+    .support {
+        .sectionContainer {
+            .infoDiv {
+                gap: 1rem;
+
+                .textDiv {
+                    .singleInfo {
+                        p {
+                            max-width: 500px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // Subscribe  section --------------------------->
+    .subscribe {
+        .sectionContainer {
+            max-width: 50%;
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    // Home  section  --------------->>
+    // if you want  bus tour image want to make full width then turn comment off in this home section
+    .home {
+        .bus {
+            width: 90%;
+            top: -30%;
+        }
+    }
+}
+
+::selection {
+    background: var(--primaryColor);
+    color: var(--whiteColor);
+}
+::-webkit-scrollbar {
+    width: 10px;
+    background: var(--grayBg);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--primaryColor);
+    border-radius: 10px;
 }

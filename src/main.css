@@ -255,6 +255,7 @@ h2 {
   border-radius: 3rem;
   width: 80%;
   align-items: center;
+  cursor: pointer;
 }
 .search .sectionContainer .btns .singleBtn:hover {
   background: var(--primaryColor);
@@ -704,4 +705,124 @@ h2 {
   .search .sectionContainer .searchInputs .singlInput .texts .input {
     width: 100%;
   }
+  .support .sectionContainer .infoDiv {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 5rem;
+  }
+  .support .sectionContainer .infoDiv .textDiv {
+    margin-top: 0rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .info .infoContainer {
+    padding: 0 6rem;
+  }
+  .info .infoContainer .titleDiv {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    flex-direction: row;
+  }
+  .info .cardDiv {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .info .cardDiv .singleBtn {
+    max-width: 260px;
+    padding: 3rem;
+  }
+}
+@media screen and (min-width: 960px) {
+  .search .sectionContainer .searchInputs {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .travelers .sectionContainer .tavelersContainer {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 3rem 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+  h4 {
+    padding: 1rem 0;
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 27px;
+  }
+  .section {
+    padding: 6rem 0 4rem;
+  }
+  .container {
+    width: 75%;
+    margin: auto;
+  }
+  .NavigationBarOne,
+  .NavigationBarTwo {
+    padding: 1.5rem 5rem;
+  }
+  .navbarWithBg {
+    padding: 0 5rem;
+  }
+  .home .mainContent {
+    width: 60%;
+    font-size: 25px;
+    line-height: 4rem;
+  }
+  .home .homeImg .bus {
+    width: 100%;
+    top: -10;
+  }
+  .search .sectionContainer .btns {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1106px) {
+  .subscribe .sectionContainer {
+    max-width: 60%;
+  }
+}
+@media screen and (min-width: 1332px) {
+  .NavigationBar .NavigationBarTwo .menu {
+    gap: 1rem;
+  }
+  .NavigationBar .NavigationBarTwo .menu .listItem {
+    padding: 0 1.5rem;
+    font-size: 14px;
+  }
+  .support .sectionContainer .infoDiv {
+    gap: 1rem;
+  }
+  .support .sectionContainer .infoDiv .textDiv .singleInfo p {
+    max-width: 500px;
+  }
+  .subscribe .sectionContainer {
+    max-width: 50%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .home .bus {
+    width: 90%;
+    top: -30%;
+  }
+}
+::-moz-selection {
+  background: var(--primaryColor);
+  color: var(--whiteColor);
+}
+::selection {
+  background: var(--primaryColor);
+  color: var(--whiteColor);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background: var(--grayBg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primaryColor);
+  border-radius: 10px;
 }/*# sourceMappingURL=main.css.map */

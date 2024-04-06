@@ -45,14 +45,14 @@ function Info() {
             <p>you can also call us on your phone to book ticket!</p>
           </div>
           {/* grid four  */}
-          <div className="singleCard grid">
+          {/* <div className="singleCard grid">
             <div className="iconDiv flex colorz2">
               <FiUsers className="icon"></FiUsers>
             </div>
 
             <span className="cardTitile">About Us</span>
             <p>you can also call us on your phone to book ticket!</p>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
