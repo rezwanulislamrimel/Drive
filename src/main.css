@@ -271,7 +271,7 @@ h2 {
 .search .sectionContainer .searchInputs {
   width: 100%;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
   gap: 1.5rem;
 }
 .search .sectionContainer .searchInputs .singlInput .iconDiv {

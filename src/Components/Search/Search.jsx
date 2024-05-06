@@ -1,4 +1,5 @@
 import React from "react";
+
 //! imported icon -----------
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { RiAccountPinCircleLine } from "react-icons/ri";
@@ -7,6 +8,8 @@ import { SlCalender } from "react-icons/sl";
 // import { RxCalendar } from "react-icons/rx";
 
 function Search() {
+  // dropdown section
+
   return (
     <div>
       <div className="search container section ">
@@ -25,7 +28,7 @@ function Search() {
             </div>
           </div>
 
-          <div className="searchInputs flex">
+          <div className="searchInputs flex ">
             {/* signle input section one  */}
 
             <div className="singlInput flex">
@@ -46,6 +49,8 @@ function Search() {
               <div className="texts">
                 <h4>To</h4>
                 <input type="text " placeholder="Enter City" />
+
+                {/* dropdown second section end  here  */}
               </div>
             </div>
             {/* signle input section Three */}
