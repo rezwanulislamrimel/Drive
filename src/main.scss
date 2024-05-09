@@ -269,6 +269,11 @@ h2 {
             flex-direction: column;
             width: 100%;
             margin: auto;
+            .btnBlock {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
 
             .singleBtn {
                 padding: 0.8rem 1.5rem;

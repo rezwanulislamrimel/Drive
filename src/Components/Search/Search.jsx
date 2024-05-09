@@ -77,8 +77,11 @@ function Search() {
             </div>
 
             {/* btn section  */}
-
-            <button className="btn btnBlock flex">Search Bus</button>
+          </div>
+          <div>
+            <div className="btns">
+              <button className="btn btnBlock flex">Search Bus</button>
+            </div>
           </div>
         </div>
       </div>
