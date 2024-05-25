@@ -94,8 +94,17 @@ function Search() {
                 <h4>Date of Journey</h4>
                 {/* <input type="text " placeholder="Pick a date" /> */}
 
+                {/* <div>
+                  <DatePicker
+                    selected={date}
+                    onChange={(date) => setDate(date)}
+                  />
+                </div> */}
                 <div>
                   <DatePicker
+                    showTimeSelect
+                    minTime={new Date(0, 0, 0, 12, 30)}
+                    maxTime={new Date(0, 0, 0, 19, 0)}
                     selected={date}
                     onChange={(date) => setDate(date)}
                   />
@@ -112,8 +121,17 @@ function Search() {
                 <h4>Date of Return (Optional) </h4>
                 {/* <input type="text " placeholder="Pick a date" /> */}
 
+                {/* <div>
+                  <DatePicker
+                    selected={date}
+                    onChange={(date) => setDate(date)}
+                  />
+                </div> */}
                 <div>
                   <DatePicker
+                    showTimeSelect
+                    minTime={new Date(0, 0, 0, 12, 30)}
+                    maxTime={new Date(0, 0, 0, 19, 0)}
                     selected={date}
                     onChange={(date) => setDate(date)}
                   />
