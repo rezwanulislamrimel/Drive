@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 //! imported icon -----------
 import { HiOutlineLocationMarker } from "react-icons/hi";
@@ -6,10 +6,13 @@ import { RiAccountPinCircleLine } from "react-icons/ri";
 import { SlCalender } from "react-icons/sl";
 
 // import { RxCalendar } from "react-icons/rx";
+// date picker
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
 function Search() {
   // dropdown section
-
+  const [date, setDate] = useState(new Date());
   return (
     <div>
       <div className="search container section ">
@@ -37,7 +40,21 @@ function Search() {
               </div>
               <div className="texts">
                 <h4>From</h4>
-                <input type="text " placeholder="Enter City" />
+                {/* <input type="text " placeholder="Enter City" /> */}
+
+                <form>
+                  <input type="text" list="browsers" name="favorite_browser" />
+                  <datalist id="browsers">
+                    <option value="Rangpur"></option>
+                    <option value="Dhaka"></option>
+                    <option value="Rajshahi"></option>
+                    <option value="Mymensingh"></option>
+                    <option value="Khulna"></option>
+                    <option value="Chittagong"></option>
+                    <option value="Barisal"></option>
+                    <option value="Sylhet"></option>
+                  </datalist>
+                </form>
               </div>
             </div>
             {/* signle input section Two */}
@@ -48,7 +65,21 @@ function Search() {
               </div>
               <div className="texts">
                 <h4>To</h4>
-                <input type="text " placeholder="Enter City" />
+                {/* <input type="text " placeholder="Enter City" /> */}
+
+                <form>
+                  <input type="text" list="browsers" name="favorite_browser" />
+                  <datalist id="browsers">
+                    <option value="Rangpur"></option>
+                    <option value="Dhaka"></option>
+                    <option value="Rajshahi"></option>
+                    <option value="Mymensingh"></option>
+                    <option value="Khulna"></option>
+                    <option value="Chittagong"></option>
+                    <option value="Barisal"></option>
+                    <option value="Sylhet"></option>
+                  </datalist>
+                </form>
 
                 {/* dropdown second section end  here  */}
               </div>
@@ -61,7 +92,14 @@ function Search() {
               </div>
               <div className="texts">
                 <h4>Date of Journey</h4>
-                <input type="text " placeholder="Pick a date" />
+                {/* <input type="text " placeholder="Pick a date" /> */}
+
+                <div>
+                  <DatePicker
+                    selected={date}
+                    onChange={(date) => setDate(date)}
+                  />
+                </div>
               </div>
             </div>
             {/* signle input section Four */}
@@ -71,8 +109,15 @@ function Search() {
                 <SlCalender className="icon"></SlCalender>
               </div>
               <div className="texts">
-                <h4>Date of Return </h4>
-                <input type="text " placeholder="Pick a date" />
+                <h4>Date of Return (Optional) </h4>
+                {/* <input type="text " placeholder="Pick a date" /> */}
+
+                <div>
+                  <DatePicker
+                    selected={date}
+                    onChange={(date) => setDate(date)}
+                  />
+                </div>
               </div>
             </div>
 
